@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messi's Gallery</title>
+    <link rel="stylesheet" href="main.css"> 
+    <style>
+        /* Internal CSS for this page */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .gallery img, .gallery video {
+            max-width: 300px;
+            height: auto;
+            border: 5px solid #007BFF;
+            border-radius: 10px;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Messi's Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <!-- Images Section -->
+                <div class="gallery-item">
+                    <img src="images/barca.jpg" alt="Lionel Messi in Barcelona kit">
+                    <div class="caption">Messi in Barcelona</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cup.jpg" alt="Lionel Messi lifting the World Cup">
+                    <div class="caption">Messi lifting the World Cup</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/intern.jpg" alt="Lionel Messi in Inter Miami kit">
+                    <div class="caption">Messi in Inter Miami</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/messi.jpg" alt="Lionel Messi in Argentina kit">
+                    <div class="caption">Messi in Argentina</div>
+                </div>
+
+                <!-- Media Section -->
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="media/ankara messi.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="caption">Ankara Messi - Iconic Goal</div>
+                </div>
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="media/messi edit.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="caption">The GOAT - Messi Edit</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Messi's Career. All rights reserved.</p>
+        <p>Connect with us on 
+            <a href="https://github.com/LioV21" target="_blank">GitHub</a>.
+        </p>
+    </footer>
+</body>
+</html>
